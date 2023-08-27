@@ -12,7 +12,7 @@ This repository contains Python scripts for collecting and processing RFID data 
 
 - Python 3.6 or higher
 - Dependencies: pandas, pymongo, paho-mqtt
-- MQTT broker (used: mqtt.eclipseprojects.io)
+- MQTT broker (used: [mqtt.eclipseprojects.io](mqtt.eclipseprojects.io))
 
 ## Installation
 
