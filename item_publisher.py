@@ -29,7 +29,8 @@ def send_item_data():
         "product_name": product_names[index],
         "product_id": product_ids[index],
         "rfid_tag_id": rfid_tag_ids[index],
-        "info": infos[index],
+        "product_details": product_names[index],
+        "description": infos[index],
         "quantity": quantities[index]
     }
     message = json.dumps(item_data)

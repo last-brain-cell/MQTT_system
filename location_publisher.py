@@ -3,9 +3,9 @@ from random import choice
 import json
 
 # Random Location Data for Random Picking
-levels = [1, 2]
-shelves = list(range(1, 21))
-zones = ['Zone A', 'Zone B', 'Zone C', 'Zone D']
+levels = [1, 2, 3]
+shelves = list(range(1, 4))
+zones = [1, 4]
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
@@ -14,12 +14,16 @@ def on_connect(client, userdata, flags, rc):
         print("Connection failed")
 
 def send_location_data():
-    level = choice(levels)
-    shelf = choice(shelves)
     zone = choice(zones)
+    if zone == 1:
+        shelf = choice(list(range(1, 9)))
+    else:
+        shelf = choice(list(range(1, 5)))
+    level = choice(levels)
+
     location_data = {
         "level": level,
-        "shelf": shelf,
+        "rack": shelf,
         "zone": zone
     }
     message = json.dumps(location_data)
