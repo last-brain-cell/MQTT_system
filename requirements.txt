@@ -1,0 +1,5 @@
+pandas~=2.0.3
+pymongo~=4.5.0
+paho-mqtt~=1.6.1
+fastapi~=0.101.0
+requests~=2.31.0
