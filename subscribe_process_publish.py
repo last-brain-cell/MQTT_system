@@ -6,7 +6,8 @@ import pandas as pd
 location_received = False
 current_location = None  # currently scanned location
 
-db_client = MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000")
+db_client = MongoClient("mongodb://127.0.0.1:27017/")  # if this doesn't work comment this one and uncomment the one below
+# db_client = MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000")
 
 def process(message):
     data = json.loads(message)
@@ -28,8 +29,10 @@ def process(message):
 
 
 def append_to_database(data):
-    db = db_client["naad's_db"]
-    collection = db["rfid_data"]
+    db = db_client["Product_Management"]
+    # db = db_client["naad's_db"]
+    collection = db["products"]
+    # collection = db["rfid_data"]
 
     collection.insert_one(data)
     print("Appended to database")
@@ -52,7 +55,7 @@ def append_to_csv(data):
 def on_connect(client, userdata, flags, rc):
     global location_received
     if rc == 0:
-        print("Connected to MQTT broker\nlistening for info...")
+        print("Connected to MQTT broker\nScan a location before scanning an item\nlistening for info...")
         if location_received:
             client.subscribe('item')
             print("Subscribed to 'item' topic")
@@ -60,8 +63,6 @@ def on_connect(client, userdata, flags, rc):
             location_received = True
             client.subscribe("location")
             print("Subscribed to 'location' topic")
-        # client.subscribe("location")
-        # client.subscribe('item')
     else:
         print("Connection failed")
 
