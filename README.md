@@ -10,12 +10,89 @@ This repository contains Python scripts for collecting and processing RFID data 
 
 ## Requirements
 
-- Python 3.6 or higher
+- Python 3.6 or higher [Python Installation]()
 - Dependencies: pandas, pymongo, paho-mqtt
 - MQTT broker (used: mqtt.eclipseprojects.io)
 - MQTT broker website link [eclipseprojects](https://mqtt.eclipseprojects.io/)
 
 ## Installation
+
+Certainly! Here are instructions you can include in your README file to guide users on installing Python 3.6 or higher on both Mac OS and Windows:
+
+---
+
+# Installing Python
+
+This project requires Python 3.6 or higher to run. Follow the instructions below to install Python on both Mac OS and Windows.
+
+## Mac OS
+
+Follow these steps to install Python on Mac OS:
+
+1. **Check if Python is Installed:**
+   - Open a terminal window.
+   - Check if Python is already installed by running:
+     ```
+     python3 --version
+     ```
+   - If Python is not installed, you will see a message like "Python not found."
+
+2. **Install Homebrew (Optional):**
+   - If you don't have Homebrew installed, you can install it. Homebrew is a package manager that makes it easy to install various software packages, including Python.
+   - To install Homebrew, open a terminal and run the following command:
+     ```
+     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+     ```
+
+3. **Install Python:**
+   - Use Homebrew to install Python:
+     ```
+     brew install python@3.11
+     ```
+
+4. **Verify Installation:**
+   - After installation, verify that Python is installed correctly by running:
+     ```
+     python3 --version
+     ```
+
+## Windows
+
+Follow these steps to install Python on Windows:
+
+1. **Download Python Installer:**
+   - Visit the official Python website at [python.org](https://www.python.org/downloads/windows/) to download the latest Python installer for Windows.
+
+2. **Run the Installer:**
+   - Double-click the downloaded installer (e.g., `python-3.9.7-amd64.exe`) to run it.
+
+3. **Configure Python Installation:**
+   - Check the box that says "Add Python [version] to PATH" during installation. This step is crucial for accessing Python from the command prompt.
+
+4. **Complete Installation:**
+   - Follow the installation prompts, and Python will be installed on your Windows system.
+
+5. **Verify Installation:**
+   - After installation, open a Command Prompt and verify that Python is installed correctly by running:
+     ```
+     python --version
+     ```
+
+## Verify Python Installation
+
+You can verify that Python is correctly installed by checking the version using the commands mentioned above. If you see the Python version displayed without errors, you have successfully installed Python.
+
+## Installing Python Dependencies
+
+Please note that Python versions and installation steps might change over time. It's recommended to refer to the official Python documentation for the most up-to-date instructions:
+
+- [Python Downloads](https://www.python.org/downloads/)
+- [Installing Python on Mac](https://docs.python.org/3/using/mac.html)
+- [Installing Python on Windows](https://docs.python.org/3/using/windows.html)
+
+Make sure to adapt these instructions to any specific changes in the Python installation process.
+
+## Project Setup
 
 1. Clone this repository to your local machine:
 
