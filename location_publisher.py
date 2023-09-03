@@ -4,8 +4,9 @@ import json
 
 # Random Location Data for Random Picking
 levels = [1, 2, 3]
-shelves = list(range(1, 4))
+# levels = [3]
 zones = [1, 4]
+# zones = [1]
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:

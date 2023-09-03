@@ -10,6 +10,8 @@ infos = ['High-quality screws for various applications.', 'Durable hammers with 
 quantities = [25, 50, 10, 75, 30, 15, 60, 5, 40, 20, 35, 42, 18, 28, 10, 75, 50, 15, 23, 8]
 item_flag = len(product_names)
 
+
+
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
         print("Connected to MQTT broker")
