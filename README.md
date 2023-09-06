@@ -64,7 +64,7 @@ Follow these steps to install Python on Windows:
    - Visit the official Python website at [python.org](https://www.python.org/downloads/windows/) to download the latest Python installer for Windows.
 
 2. **Run the Installer:**
-   - Double-click the downloaded installer (e.g., `python-3.9.7-amd64.exe`) to run it.
+   - Double-click the downloaded installer (e.g., `python-3.11-amd64.exe`) to run it.
 
 3. **Configure Python Installation:**
    - Check the box that says "Add Python [version] to PATH" during installation. This step is crucial for accessing Python from the command prompt.
@@ -174,6 +174,8 @@ Follow these steps to set up MongoDB on Mac OS:
 ## Windows
 
 Follow these steps to set up MongoDB on Windows:
+
+**This is a direct installation link for installing MongoDB as well as MongoDB compass - [Click to install](https://fastdl.mongodb.org/osx/mongodb-macos-arm64-7.0.1.tgz)**
 
 1. **Download and Install MongoDB:**
    - Download the MongoDB installer for Windows from the official website.
